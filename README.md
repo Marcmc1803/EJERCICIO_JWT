@@ -1,13 +1,11 @@
-# Seminario 7 EA — JWT y Web Sockets
+# Seminario 7 EA — JWT
 
 ¡Bienvenido al **Seminario 7 de Entornos de Aplicaciones (EA)**! Este repositorio contiene un proyecto completo que demuestra la implementación de autenticación segura utilizando **JWT (JSON Web Tokens)** con la estrategia de **Access Token y Refresh Token**. 
 
 > **IMPORTANTE: Web Sockets**
-> Actualmente te encuentras en la rama principal que cubre la parte de **JWT**.
-> Para acceder al contenido y código correspondiente al seminario de **Web Sockets**, debes **cambiar de rama**. Ejecuta el siguiente comando en tu terminal:
-> ```bash
-> git checkout socket_io
-> ```
+> Actualmente te encuentras en el repositorio que cubre la parte de **JWT**.
+> El contenido y código correspondiente al seminario de **Web Sockets** se ha movido a un repositorio independiente. Puedes encontrarlo aquí:
+> [EA_Sem7_Socket](https://github.com/JairoLopezCarbo/EA_Sem7_Socket.git)
 
 ---
 
@@ -118,4 +116,4 @@ La documentación detallada interactiva generada con Swagger está disponible lo
 
 ---
 
-Recuerda: si buscas el material de **Web Sockets**, ejecuta `git checkout socket_io`. ¡Diviértete explorando JWT!
+Recuerda: si buscas el material de **Web Sockets**, dirígete al [repositorio de Sockets](https://github.com/JairoLopezCarbo/EA_Sem7_Socket.git). ¡Diviértete explorando JWT!
