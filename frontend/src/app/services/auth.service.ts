@@ -23,6 +23,7 @@ export interface LoginResponse {
     name: string;
     email: string;
     organizacion: string;
+    role: string;
   };
 }
 
@@ -31,6 +32,7 @@ export interface Usuario {
   name: string;
   email: string;
   organizacion: any;
+  role: string;
 }
 
 const TOKEN_KEY = 'jwt_token';
@@ -88,6 +90,13 @@ export class AuthService {
    */
   getUsuarios(): Observable<Usuario[]> {
     return this.http.get<Usuario[]>(`${API_URL}/usuarios`);
+  }
+
+  /**
+   * Petición para obtener datos de administrador.
+   */
+  getAdminData(): Observable<{ message: string }> {
+    return this.http.get<{ message: string }>(`${API_URL}/auth/admin`);
   }
 
   /** Obtiene el token del localStorage */

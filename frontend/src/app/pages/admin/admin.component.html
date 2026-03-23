@@ -1,0 +1,22 @@
+<div class="admin-container">
+    <h2>Panell d'Administració</h2>
+    
+    <div *ngIf="adminMessage" class="success-message">
+        <p>{{ adminMessage }}</p>
+    </div>
+
+    <div *ngIf="errorMessage" class="error-message">
+        <p>{{ errorMessage }}</p>
+    </div>
+
+    <div class="admin-content">
+        <p>Aquesta secció només és visible per a usuaris amb el rol <strong>admin</strong>.</p>
+        <ul>
+            <li>Gestió d'usuaris (properament)</li>
+            <li>Configuració del sistema (properament)</li>
+            <li>Auditoria de logs (properament)</li>
+        </ul>
+    </div>
+
+    <button (click)="$event.preventDefault()" class="btn-back">Tornar</button>
+</div>

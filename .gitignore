@@ -1,2 +1,7 @@
 build/
 node_modules/
+.env
+*.log
+src/check_orgs.ts
+org_ids.txt
+backend_out_ascii.log

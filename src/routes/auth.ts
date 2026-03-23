@@ -3,6 +3,7 @@ import { login, logout, refreshToken, getMe } from '../controllers/auth';
 import Joi from 'joi';
 import { ValidateJoi } from '../middleware/Joi';
 import { authenticateToken } from '../middleware/auth';
+import { checkRole } from '../middleware/checkRole';
 
 const router = express.Router();
 
@@ -83,5 +84,23 @@ router.post('/refresh', refreshToken);
  *         description: No autorizado
  */
 router.get('/me', authenticateToken, getMe);
+
+/**
+ * @openapi
+ * /auth/admin:
+ *   get:
+ *     summary: Acceso solo para administradores
+ *     tags: [Auth]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Acceso concedido
+ *       403:
+ *         description: Prohibido (no es admin)
+ */
+router.get('/admin', authenticateToken, checkRole(['admin']), (req, res) => {
+    res.status(200).json({ message: 'Benvingut al panell d\'administració!' });
+});
 
 export default router;
