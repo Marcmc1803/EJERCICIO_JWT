@@ -24,11 +24,5 @@ Pots veure la demostració de la seguretat i l'explicació del codi aquí:
 
 **Parts del codi assistides per IA:**
 
-* **Generació i verificació del Token (Backend):**
-    * **Configuració de Seguretat:** M'ha ajudat a configurar tant els tokens d'accés com els de refresc per assegurar que la informació de l'usuari viatgi correctament en el payload.
-    * **Validació de dades:** M'ha servit de guia per comprovar que les dades extretes del token siguin vàlides al servidor abans de permetre qualsevol accés a les rutes de l'API.
-
-* **Middleware de Control d'Accés i Rutes (Frontend/Backend):**
-    * **Filtre de seguretat (CheckRole):** Vaig demanar a la IA com escriure el codi del middleware que comprova si un usuari té el permís necessari (per exemple, si és administrador) per entrar en una ruta específica.
-    * **Gestió d'errors:** M'ha ajudat a programar els missatges d'error com el "403 Accés denegat" per quan algú intenta fer una petició a una zona on no té permís.
-    * **Estructura de rutes:** M'ha servit per organitzar quines rutes han de ser privades i quines públiques, ajudant-me a configurar l' `authGuard` d'Angular per bloquejar l'accés a nivell de navegació.
+* **Configuració de Seguretat (JWT):** He utilitzat la IA com a eina de consulta per definir correctament els temps d'expiració dels tokens i per verificar que la informació de l'usuari s'extreu correctament del payload al servidor.
+* **Lògica del Middleware i Rutes:** M'ha servit de guia per estructurar el middleware `checkRole` i per assegurar-me que l' `authGuard` d'Angular bloquegés l'accés a les rutes privades de forma eficient segons el rol de l'usuari.
