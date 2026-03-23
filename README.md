@@ -32,6 +32,3 @@ Pots veure la demostració de la seguretat i l'explicació del codi aquí:
     * **Filtre de seguretat (CheckRole):** Vaig demanar a la IA com escriure el codi del middleware que comprova si un usuari té el permís necessari (per exemple, si és administrador) per entrar en una ruta específica.
     * **Gestió d'errors:** M'ha ajudat a programar els missatges d'error com el "403 Accés denegat" per quan algú intenta fer una petició a una zona on no té permís.
     * **Estructura de rutes:** M'ha servit per organitzar quines rutes han de ser privades i quines públiques, ajudant-me a configurar l' `authGuard` d'Angular per bloquejar l'accés a nivell de navegació.
-
-
-
